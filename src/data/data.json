@@ -1,0 +1,126 @@
+{
+    "Header": {
+
+        "title": "Avec AZ energies alliez economies et ecologie !",
+        "paragraph": "Etude et installation de panneaux solaires photovoltaiques"
+
+    },
+    "About": {
+        "paragraph": "metre ici une petite story de la boite creation data ou valeurs ; entreprise a taille humaine / familiale ?",
+        "Why": [
+            "Lorem ipsum dolor",
+            "Tempor incididunt",
+            "Lorem ipsum dolor",
+            "Incididunt ut labore"
+        ],
+        "Why2": [
+            "Aliquip ex ea commodo",
+            "Lorem ipsum dolor",
+            "Exercitation ullamco",
+            "Lorem ipsum dolor"
+        ]
+    },
+    "Services": [{
+            "icon": "fa fa-briefcase",
+            "name": "Étude et installation de panneaux solaires photovoltaïques"
+        },
+        {
+            "icon": "fa fa-pen-to-square",
+            "name": "Proposition de solution d'optimisation des installations"        },
+        {
+            "icon": "fa fa-battery-three-quarters",
+            "name": "Stockage de la surproduction sur batterie virtuelle"        },
+        {
+            "icon": "fa fa-calendar-check-o",
+            "name": "Entretien annuel d'installation solaire"        },
+        {
+            "icon": "fa fa-car",
+            "name": "Pose de borne de recharge pour véhicule électrique"        }
+
+
+    ],
+    "Testimonials": [{
+            "img": "img/testimonials/01.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/02.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/03.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/04.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/05.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/06.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        }
+    ],
+    "Team": [{
+            "img": "img/team/01.jpg",
+            "name": "John Doe",
+            "job": "Director"
+        },
+        {
+            "img": "img/team/02.jpg",
+            "name": "Mike Doe",
+            "job": "Senior Designer"
+        }, {
+            "img": "img/team/03.jpg",
+            "name": "Jane Doe",
+            "job": "Senior Designer"
+        },
+        {
+            "img": "img/team/04.jpg",
+            "name": "Karen Doe",
+            "job": "Project Manager"
+        }
+    ],
+    "Contact": {
+        "address": "4321 California St, San Francisco, CA 12345 ",
+        "phone": "+1 123 456 1234",
+        "email": "info@company.com",
+        "facebook": "fb.com",
+        "twitter": "twitter.com",
+        "youtube": "youtube.com"
+    },
+    "Features": [
+
+
+        {
+            "icon": "fa fa-wifi",
+            "title": "Produisez votre propre electricite",
+            "text": "Produisez votre propre electricite"
+        },
+        
+        {
+            "icon": "fa fa-usd",
+            "title": "Reduction de vos factures d'electricite",
+            "text": "Vous réduisez votre dépendance vis-à-vis des fournisseurs d'énergie traditionnels et réalisez des économies significatives"
+        },
+        {
+            "icon": "fa fa-recycle",
+            "title": "Énergie propre et renouvelable",
+            "text": "Les panneaux solaires utilisent l'énergie inépuisable et non-polluante du soleil et votre empreinte carbone est reduite et vous contribuez à la lutte contre le changement climatique."
+        },
+        {
+            "icon": "fa fa-rocket",
+            "title": "Valorisation de votre propriété ",
+            "text": "L'installation de panneaux solaires augmente la valeur de votre maison et constitue un investissement intelligent à long terme. De plus, cela peut attirer les acheteurs soucieux de l'environnement lors de la revente de votre bien immobilier."
+        }
+    ]
+}
