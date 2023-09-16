@@ -39,7 +39,7 @@ export const Gallery = props => {
                     <div className="hover-text">
                       <h6>{title}</h6>
                     </div>
-                    <img src={thumb} className="img-responsive imagesize" alt="Project Title" />{" "}
+                    <img src={thumb} className="img-responsive imagesize gallery-image" alt="Project Title" />{" "}
                   </div>
                 </div>
               </div>

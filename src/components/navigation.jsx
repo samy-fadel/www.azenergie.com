@@ -24,7 +24,7 @@ export const Navigation = (props) => {
               className='logo-image'
               style={{ maxHeight: '250%', maxWidth: 'auto', marginRight: '10px' }} // Adjust margins as needed
             />
-            <span>AZ ENERGIES</span>
+            <span>AZ ENERGIE</span>
           </a>
         </div>
 
@@ -43,6 +43,11 @@ export const Navigation = (props) => {
             <li>
               <a href='#services' className='page-scroll'>
                 Nos Prestations
+              </a>
+            </li>
+            <li>
+              <a href='#contactform' className='page-scroll'>
+              Contact
               </a>
             </li>
           </ul>

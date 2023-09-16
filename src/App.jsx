@@ -11,6 +11,12 @@ import { ContactForm } from './components/contactform'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
 
+import { ReactComponent as CompanyIcon } from './logo.svg';
+
+import { WhatsAppWidget } from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
+
+
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -24,6 +30,7 @@ const App = () => {
 
   return (
     <div>
+      <WhatsAppWidget CompanyIcon={CompanyIcon} phoneNumber="0033762357058" />
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
