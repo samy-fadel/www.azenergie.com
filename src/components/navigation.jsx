@@ -1,58 +1,73 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
-        <div className='navbar-header' style={{ display: 'flex', alignItems: 'center' }}>
+        <div className='navbar-header'>
           <button
             type='button'
             className='navbar-toggle collapsed'
             data-toggle='collapse'
             data-target='#bs-example-navbar-collapse-1'
           >
-            <span className='sr-only'>Toggle navigation</span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
+            {' '}
+            <span className='sr-only'>Toggle navigation</span>{' '}
+            <span className='icon-bar'></span>{' '}
+            <span className='icon-bar'></span>{' '}
+            <span className='icon-bar'></span>{' '}
           </button>
-          {/* Logo Image */}
-          <a className='navbar-brand page-scroll' href='#page-top' style={{ display: 'flex', alignItems: 'center' }}>
-            <img
-              src={`img/logo-az.png`}
-              alt='Logo'
-              className='logo-image'
-              style={{ maxHeight: '250%', maxWidth: 'auto', marginRight: '10px' }} // Adjust margins as needed
-            />
-            <span>AZ ENERGIE</span>
-          </a>
+          <Link to="/">
+            <a className='navbar-brand page-scroll'>
+              <img
+                src='/img/logo.png'
+                alt='Your Logo'
+                style={{
+                  maxWidth: '50px',
+                }}
+              />
+            </a>
+          </Link>
         </div>
 
         <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#features' className='page-scroll'>
-                Energie Solaire
-              </a>
+              
+              
+              <ScrollLink to="features" smooth={true} duration={500}>
+              <Link to="/#features" style={{ color: 'white' }} >
+                Pourquoi choisir l'énergie Solaire ?
+                </Link>
+              </ScrollLink>
+              
             </li>
             <li>
-              <a href='#portfolio' className='page-scroll'>
-                Qui Sommes-Nous
-              </a>
+              <ScrollLink to="whoweare" smooth={true} duration={500}>
+              <Link to="/#whoweare" style={{ color: 'white' }} >
+                Qui Sommes-Nous ?
+                </Link>
+              </ScrollLink>
             </li>
             <li>
-              <a href='#services' className='page-scroll'>
+              <ScrollLink to="portfolio" smooth={true} duration={500}>
+              <Link to="/#portfolio" style={{ color: 'white' }} >
+                Nos valeurs
+                </Link>
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="services" smooth={true} duration={500}>
+              <Link to="/#services" style={{ color: 'white' }} >
                 Nos Prestations
-              </a>
-            </li>
-            <li>
-              <a href='#contactform' className='page-scroll'>
-              Contact
-              </a>
+                </Link>
+              </ScrollLink>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   );
-};
+}

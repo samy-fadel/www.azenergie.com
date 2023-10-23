@@ -8,7 +8,7 @@ export const Gallery = props => {
   const data = [
     { thumb: "img/portfolio/01-small.jpg", title: "Nous nous engageons à n'utiliser que des équipements de haute qualité, testés et éprouvés. Nos partenariats avec les principaux fabricants nous permettent de vous offrir des panneaux solaires durables et performants, accompagnés de garanties solides." },
     { thumb: "img/portfolio/02-small.jpg", title: "De la conception initiale à l'installation et à la maintenance continue,nous nous occupons de tout le processus. Notre équipe prend en charge toutes les démarches administratives et veille à ce que votre système solaire fonctionne de manière optimale." },
-    { thumb: "img/portfolio/03-small.jpg", title: "Nous comprenons que chaque maison et chaque entreprise est unique. C'est pourquoi nous concevons des systèmes solaires personnalisés pour répondre à vos besoins énergétiques spécifiques. Nous maximisons l'efficacité de votre installation en tenant compte de votre emplacement, de votre consommation et de votre budget." }
+    { thumb: "img/portfolio/03-small.jpg", title: "Chaque entreprise est unique, c'est pourquoi nous concevons des systèmes solaires personnalisés pour répondre à vos besoins énergétiques spécifiques. Nous maximisons l'efficacité de votre installation en tenant compte de votre emplacement, de votre consommation et de votre budget." }
   ];
 
   const images = data.map(obj => obj.thumb.replace("-small", "-large"));
@@ -27,8 +27,8 @@ export const Gallery = props => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Pourquoi choisir AZ ENERGIE ?</h2>
-          <p>mettre ici une petite story de la boite creation data ou valeurs ; entreprise a taille humaine / familiale ?</p>
+          <h2>Nos valeurs</h2>
+         
         </div>
         <div className="row">
           <div className="portfolio-items">
@@ -37,7 +37,7 @@ export const Gallery = props => {
                 <div className="portfolio-item cursor">
                   <div className="hover-bg">
                     <div className="hover-text">
-                      <h6>{title}</h6>
+                      <h5>{title}</h5>
                     </div>
                     <img src={thumb} className="img-responsive imagesize gallery-image" alt="Project Title" />{" "}
                   </div>

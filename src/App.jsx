@@ -1,45 +1,53 @@
-import { useState, useEffect } from 'react'
-import { Navigation } from './components/navigation'
-import { Header } from './components/header'
-import { Features } from './components/features'
-import { About } from './components/about'
-import { Services } from './components/services'
-import { Gallery } from './components/gallery'
-import { Testimonials } from './components/testimonials'
-import { Footer } from './components/footer'
-import { ContactForm } from './components/contactform'
-import JsonData from './data/data.json'
-import SmoothScroll from 'smooth-scroll'
-
-import { ReactComponent as CompanyIcon } from './logo.svg';
-
-import { WhatsAppWidget } from 'react-whatsapp-widget';
-import 'react-whatsapp-widget/dist/index.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Navigation } from './components/navigation';
+import Footer from './components/footer';
+import JsonData from './data/data.json';
+import Home from './components/home';
+import {Legal} from './components/legal'; 
+import {Confidentiality} from './components/confidentiality'; 
 
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-})
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({})
+  const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
-    setLandingPageData(JsonData)
-  }, [])
+    setLandingPageData(JsonData);
+  }, []);
 
   return (
     <div>
-      <WhatsAppWidget CompanyIcon={CompanyIcon} phoneNumber="0033762357058" />
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <Gallery />
-      <Services data={landingPageData.Services} />
-      <ContactForm />
+  
+      <Switch>
+        <Route path="/legales">
+          <Legal />
+        </Route>
+        <Route path="/confidentiality">
+          <Confidentiality />
+        </Route>
+        <Route path="/#features">
+          <Home scrollTarget="features" />
+        </Route>
+        <Route path="/whoweare">
+          <Home scrollTarget="whoweare" />
+        </Route>
+        <Route path="/portfolio">
+          <Home scrollTarget="portfolio" />
+        </Route>
+        <Route path="/services">
+          <Home scrollTarget="services" />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+      </Switch>
+      
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

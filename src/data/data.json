@@ -103,24 +103,26 @@
 
         {
             "icon": "fa fa-wifi",
-            "title": "Produisez votre propre electricite",
-            "text": "Produisez votre propre electricite"
+            "title": "Produisez votre propre électricité"
         },
         
         {
             "icon": "fa fa-usd",
-            "title": "Reduction de vos factures d'electricite",
-            "text": "Vous réduisez votre dépendance vis-à-vis des fournisseurs d'énergie traditionnels et réalisez des économies significatives"
+            "title": "Réduisez vos factures"
         },
         {
             "icon": "fa fa-recycle",
-            "title": "Énergie propre et renouvelable",
-            "text": "Les panneaux solaires utilisent l'énergie inépuisable et non-polluante du soleil et votre empreinte carbone est reduite et vous contribuez à la lutte contre le changement climatique."
-        },
+            "title": "Une énergie propre et renouvelable"        },
         {
             "icon": "fa fa-rocket",
-            "title": "Valorisation de votre propriété ",
-            "text": "L'installation de panneaux solaires augmente la valeur de votre maison et constitue un investissement intelligent à long terme. De plus, cela peut attirer les acheteurs soucieux de l'environnement lors de la revente de votre bien immobilier."
-        }
+            "title": "Augmentez la valeur de votre propriété "        }
+            ,
+        {
+            "icon": "fa fa-gg-circle",
+            "title": "bénéficiez d'aide de l'état pour votre installation"        }
+            ,
+        {
+            "icon": "fa fa-leaf",
+            "title": "réduisez votre empreinte carbone"        }
     ]
 }

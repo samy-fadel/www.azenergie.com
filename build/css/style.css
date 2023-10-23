@@ -34,6 +34,7 @@ h5 {
 }
 p {
 	font-size: 15px;
+	text-align: justify;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -65,6 +66,18 @@ hr {
 	border: 0;
 }
 /* Navigation */
+
+#menu .navbar-brand {
+	display: flex;
+	align-items: center;
+  }
+  
+  #menu .navbar-brand img {
+	max-width: 50px;
+	margin: 0 auto;
+  }
+
+  
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
@@ -78,7 +91,7 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	color: #D7EFC2;
+	color: #82BB50;
 	text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
@@ -226,6 +239,44 @@ header .intro-text {
 	padding-bottom: 200px;
 	text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+	.intro-text {
+	  padding-top: 5%;
+	  padding-bottom: 5%;
+	}
+  }
+
+  @media screen and (max-width: 800px) {
+	.intro h1 {
+	  font-size: 30px;
+	}
+  }
+
+  @media screen and (max-width: 800px) {
+	 h1 {
+	  font-size: 20px; 
+	}
+  }
+
+  @media screen and (max-width: 800px) {
+	h2 {
+	 font-size: 26px; 
+   }
+ }
+
+  @media screen and (max-width: 800px) {
+	h3 {
+	 font-size: 18px;
+   }
+ }
+
+ @media (max-width: 800px) {
+	.section-title p {
+	  font-size: 14px!important; /* Font size for small mobile screens */
+	}
+  }
+
 /* Features Section */
 #features {
 	padding: 100px 0;
@@ -354,11 +405,11 @@ header .intro-text {
 }
 .hover-bg .hover-text {
 	position: absolute;
-	text-align: center;
+	text-align: justify;
 	margin: 0 auto;
 	color: #fff;
 	background: linear-gradient(to right, #82BB50 0%, #82BB50 100%);
-	padding: 30% 0 0 0;
+	padding: 10% 5% 5% 5%;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
@@ -374,6 +425,7 @@ header .intro-text {
 	letter-spacing: 1px;
 	font-weight: 500;
 	text-transform: uppercase;
+	text-align: justify;
 }
 .hover-bg:hover .hover-text>h4 {
 	opacity: 1;
@@ -459,6 +511,10 @@ header .intro-text {
 #footer a:hover {
 	border-bottom: 2px solid #608dfd;
 }
+#footer h3 {
+	color: #82BB50;
+}
+
 
 @media (max-width: 768px) {
 #about img {
@@ -579,3 +635,123 @@ header .intro-text {
     max-height: none;
   }
 }
+
+
+
+/* whoweare Section */
+#whoweare {
+	padding: 100px 0;
+	background: #82BB50;
+	color: #fff;
+}
+
+#whoweare h2 {
+	color: #fff;
+}
+#whoweare p {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+.whoweare-item {
+	margin: 1px -15px 0 -14px;
+	padding: 0;
+}
+.whoweare-item .hover-bg {
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+}
+
+
+
+
+/* confidentiality Section */
+#confidentiality {
+	padding: 100px 0;
+	background: #82BB50;
+	color: #fff;
+	text-justify: distribute-all-lines;
+}
+
+#confidentiality h2 {
+	color: #fff;
+	text-align: center;
+}
+#confidentiality p {
+padding-left: 10px;
+padding-right: 10px;
+text-justify: distribute-all-lines;
+
+}
+
+
+.confidentiality-item {
+	margin: 1px -15px 0 -14px;
+	padding: 0;
+}
+.confidentiality-item .hover-bg {
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+}
+
+#confidentiality ul {
+	text-justify: distribute-all-lines;
+	
+	}
+	#confidentiality li {
+		text-justify: distribute-all-lines;
+		
+		}
+	
+
+
+
+/* legal Section */
+#legal {
+	padding: 100px 0;
+	background: #82BB50;
+	color: #fff;
+	text-justify: distribute-all-lines;
+}
+
+#legal h2 {
+	color: #fff;
+	text-align: center;
+}
+
+#legal h3 {
+	color: #292828;
+	text-align: left;
+}
+#legal p {
+padding-left: 10px;
+padding-right: 10px;
+text-justify: distribute-all-lines;
+
+}
+
+
+.legal-item {
+	margin: 1px -15px 0 -14px;
+	padding: 0;
+}
+.legal-item .hover-bg {
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+}
+
+#legal ul {
+	text-justify: distribute-all-lines;
+	
+	}
+	
+#legal li {
+text-justify: distribute-all-lines;
+		
+}
+	
+

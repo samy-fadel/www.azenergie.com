@@ -1,4 +1,5 @@
 import ParticlesBg from "particles-bg";
+import React from 'react';
 
 export const Header = (props) => {
   return (
@@ -14,12 +15,7 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : 'Loading'}</p>
-                <a
-                  href='#contactform'
-                  className='btn btn-custom btn-lg page-scroll'
-                >
-                  Contactez-Nous !
-                </a>{' '}
+                {' '}
               </div>
             </div>
           </div>
